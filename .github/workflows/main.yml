@@ -19,4 +19,5 @@ jobs:
       - run: git branch -r
       - run: git checkout dist --
       - run: git status
-      - run: ls
+      - run: cp -r dist/* .
+      - run: git status
