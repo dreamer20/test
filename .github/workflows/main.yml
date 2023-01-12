@@ -21,3 +21,7 @@ jobs:
       - run: git status
       - run: cp -r dist/* .
       - run: git status
+      - run: cp index.html 404.html
+      - run: git add .
+      - run: git commit -m "Update app"
+      - run: git push origin dist
