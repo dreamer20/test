@@ -15,6 +15,8 @@ jobs:
           node-version: '18'
       - run: npm install
       - run: npm run build
+      - run: git config --global user.name 'dreamer20'
+      - run: git config --global user.email 'gv4alex@gmail.com'
       - run: git fetch --all
       - run: git branch -r
       - run: git checkout dist --
