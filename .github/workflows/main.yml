@@ -15,15 +15,6 @@ jobs:
           node-version: '18'
       - run: npm install
       - run: npm run build
-      - run: git config --global user.name 'dreamer20'
-      - run: git config --global user.email 'gv4alex@gmail.com'
-      - run: git fetch --all
-      - run: git branch -r
-      - run: git checkout dist --
-      - run: git status
-      - run: cp -r dist/* .
-      - run: git status
-      - run: cp index.html 404.html
-      - run: git add .
-      - run: git commit -m "Update app"
-      - run: git push origin dist
+      - uses: actions/checkout@dist
+      - run: ls
+
