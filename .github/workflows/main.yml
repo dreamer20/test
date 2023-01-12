@@ -24,7 +24,12 @@ jobs:
       - run: ls
       - run: git branch
       - run: git status
-      - run: cp -r ../dist .
+      - run: cp -r ../dist/* .
       - run: ls
       - run: git status
+      - run: git add .
+      - run: git commit -m "Update"
+      - run: git config --global user.name 'dreamer20'
+      - run: git config --global user.email 'gv4alex@gmail.com'
+      - run: git push origin dist
 
