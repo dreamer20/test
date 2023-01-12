@@ -17,10 +17,13 @@ jobs:
       - run: npm run build
       - run: ls ..
       - run: cp -r dist ..
+      - run: ls ..
       - uses: actions/checkout@v3
         with:
           ref: dist
       - run: ls
       - run: git branch
       - run: git status
+      - run: cp r ../dist .
+      - run: ls
 
