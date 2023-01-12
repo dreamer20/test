@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>Test</h1>
+  <h1>SUPER TEST</h1>
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum unde, ipsa suscipit eum, dicta sed eius voluptas voluptatibus vitae culpa velit consequatur, pariatur aliquam? Perspiciatis rerum dicta nihil voluptates harum.</p>
 
 </template>
